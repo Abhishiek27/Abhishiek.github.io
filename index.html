@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishiek</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;300;400;500;600;700;800;900&family=Lora:wght@400;700&family=Outfit:wght@100;900&family=Playwrite+NG+Modern:wght@100;400&display=swap');
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Nav -->
+    <nav>
+        <div class="container nav_container">
+            <a href="index.html">ABHISHIEK</a>
+        </div>
+    </nav>
+
+    <!-- Floating Nav -->
+    <menu class="floating__nav">
+        <a href="#home" class="active"><i class="fas fa-home"></i></a>
+        <a href="#resume"><i class="uil uil-file-info-alt"></i></a>
+        <a href="#projects"><i class="uil uil-laptop-connection"></i></a>
+        <a href="#contact"><i class="far fa-address-book"></i></a>
+    </menu>
+
+    <!-- Header -->
+    <header id="home">
+        <div class="header__container">
+            <div class="header__image">
+                <img src="./Assests/pic.jpg" alt="Profile Picture">
+            </div>
+            <h5>Hi, I'm Abhishiek</h5>
+            <h1>Fullstack <span>Python Developer</span><br></h1>
+            <p>
+                Enthusiastic Full Stack Python Developer with expertise in HTML, CSS, JavaScript, and ReactJS. Experienced in Python for backend development, eager to build dynamic, user-centric web applications.
+            </p>
+            <div class="header__cta">
+                <a href="#projects" class="btn">Projects</a>
+                <a href="#contact" class="btn primary">Contact me</a>
+            </div>
+
+            <menu class="header_socials">
+                <a href="https://github.com/Abhishiek27" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/abhishiek-b-508389318" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://wa.me/+919600872206?text=Hello%20I%20have%20a%20question%20about%20your%20services" target="_blank">
+                    <i class="fa-brands fa-whatsapp" style="font-size: 2rem; color: #25D366;"></i>
+                </a>
+            </menu>
+        </div>
+    </header>
+
+    <!-- Resume -->
+    <section id="resume">
+        <div class="container resume_container">
+            <div class="resume_left">
+                <h1>Why hire me?</h1>
+                <p>I bring a strong foundation in full-stack development and a passion for creating user-friendly, efficient web applications. My experience with Python, JavaScript, and modern frameworks ensures that I can contribute effectively to your team from day one. I'm dedicated, quick to learn, and excited to tackle challenging projects that drive innovation.</p>
+                <menu>
+                    <button class="btn primary Internships__btn" id="certificatesBtn">Certificates</button>
+                    <button class="btn Education__btn" id="educationBtn">Education</button>
+                    <button class="btn Skills__btn" id="skillsBtn">Skills</button>
+                    <button class="btn about__btn" id="aboutBtn">About me</button>
+                </menu>
+            </div>
+            <div class="resume_right" id="resumeRight">
+                <!-- Content dynamically injected by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects__content">
+                <div class="project__item">
+                    <h5>Primary Healthcare Using Telemedicine</h5>
+                    <p>A comprehensive telemedicine solution aimed at providing primary healthcare services remotely using cutting-edge technology.</p>
+                </div>
+                <div class="project__item">
+                    <h5>Skills Based Students Recommendation System</h5>
+                    <p>An intelligent recommendation system designed to match students with opportunities based on their skills and interests.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <div class="contact_form" id="contact">
+        <h3>Contact Us</h3>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="c1680164-115e-4116-9de6-c2ccb0f7788f">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
